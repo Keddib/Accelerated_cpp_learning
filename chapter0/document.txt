@@ -1,0 +1,38 @@
+# I - Hello World //example helloworld.
+
+0.1 Comments ;  //
+	// a small c+++ program;
+
+0.2 Inlcudes
+	in c++, many fundamentals facilities, such as input output, are part of the standard library,
+rather than being part of the core language. so we have to ask for the parts that we need to use.
+	Programs ask for standard-library facilities by using $include <directives>, includes normaly appear at the beginning
+of a program.
+	to use output input we requist them by writing
+#include <iostrean> (standard header)
+
+0.3 the main function
+
+a function is a piece of code that has a name and do something, and that another program can call or cause to run.
+every prograe must contain a function named main. wehn we ask the c++ to run a program , it does so bu calling this function.
+
+the main funtion must returns an intger as it's result.
+
+int main()
+
+0.4 Curly braces
+
+int main()
+{
+	// all parts between braces are part of the function
+}
+
+0.5 Using the standard library for output
+
+////
+
+0.6 return statement;
+
+ends excution of the function in which it appears. and passes the value between (0) back to the program that called func.
+
+
