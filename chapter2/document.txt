@@ -1,0 +1,68 @@
+loop invariant , which is a property that we assert will be tru e
+about a while  each time it is about to test its condition. We choose an invariant that we ca n
+use to convince ourselves that the program behaves as we intend, and we write the progra m
+so as to make the invariant true at the proper times. Although the invariant is not part of th e
+program text, it is a valuable intellectual tool for designing programs. Every useful  while
+statement that we can imagine has an invariant associated with it. Stating the invariant in a
+comment can make a while  much easier to understand.
+
+The relational operators have lower precedence  than the arithmetic operators. In expression s
+that contain more than one operator, precedence defines how the operands group. Fo r
+example,
+r == rows - 1
+means
+r == (rows - 1)
+rather than
+(r == rows) - 1
+
+
+The ||  operator has lower precedence than the relational operators, and, like most C++ binar y
+operators, is left-associative. Moreover, it has a property that most other C++ operators do no t
+share: If a program finds that the left operand of ||  is true, it does not evaluate the righ t
+operand at all. This property is often called short-circuit evaluation , and as we shall see i n
+§5.6/89, it can have a crucial effect on how we write our programs .
+
+C++ offers a way of saying that a particular name should always be interpreted as comin g
+from a particular namespace. For example, by writing
+using std::cout;
+we can say that we intend to use the name cout  to mean std::cout  exclusively, and that w e
+do not intend to define anything named cout  ourselves. Once we have done so, we can sa y
+cout  instead of std::cout .
+Logically enough, such a declaration is called a using - declaration . The name that it mention s
+behaves similarly to other names. For example, if a using -declaration appears within braces ,
+the name that it defines has its given meaning from where it is defined to the closing brace .
+From now on, we'll write using-declarations to shorten our programs.
+
+Either of these examples will cause r  to take on a sequence of values, the first of which is 0 ,
+and the last of which is rows - 1 . We can think of 0 as being the beginning of a range, an d
+rows  as being the off-the-end value  for the range. Such a range is called a  half-open range ,
+and is often written as [begin, off-the-end). The deliberately unbalanced brackets [ )  remin d
+the reader that the range is asymmetric. So, for example, the range [1, 4)  contains  1, 2,  and
+3 , but not 4 . Similarly, we say that r  takes on the values in [0, rows) . A  for  statement  has the
+following form:
+for ( init-statement  condition; expression )
+      statement
+
+
+
+2.6 Counting
+Most experienced C++ programmers have a habit that may seem weird at first: Their
+programs invariably begin counting from  0  rather than from 1 . For example, if we reduce th e
+outer for  loop of the program above to its essentials, we get
+for (int r = 0; r != rows; ++r) {
+    // write a row
+}
+We could have written this loop as
+for (int r = 1; r <= rows; ++r) {
+    // write a row
+}
+One version counts from 0  and uses !=  as its comparison; the other counts from 1  and use s
+<=  as its comparison. The number of iterations is the same in each case. Is there any reaso n
+to prefer one form over the other?
+One reason to count from 0  is that doing so encourages us to use asymmetric ranges t o
+express intervals. For example, it is natural to use the range [0, rows)  to describe the first  for
+statement, as it is to use the range [1, rows]  to describe the second one.
+Asymmetric ranges are usually easier to use than symmetric ones because of an importan t
+property: A range of the form [m, n)  has n - m  elements, and a range of the form  [m, n]  has n
+- m + 1  elements. So, for example, the number of elements in [0, rows)  is obvious (i.e.,  rows
+- 0 , or rows ) but the number in [1, rows]  is less so
