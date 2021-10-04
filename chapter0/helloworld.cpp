@@ -3,7 +3,7 @@
 
 using namespace std;
 
-namespace hajar
+namespace work
 {
 	char s[15] = "khalid Eddib";
 	void	hello(int a)
@@ -14,9 +14,11 @@ namespace hajar
 
 int main()
 {
-	hajar::hello(50);
+	work::hello(50);
+	cout << "hello world" << endl;
+	 8 + 4;
 	// cout << endl;
-	// cout << hajar::s << endl;
+	//cout << hajar::s << endl;
 	// cout << endl;
 	return 0;
 }
