@@ -51,9 +51,9 @@ int main()
 
 	float median = size % 2 == 0 ? (homework[mid] + homework[mid + 1]) / 2 : homework[mid];
 	// write the result
-	// streamsize prec = cout.precision();
-	cout << "Your final grade is " << /*setprecision(3)
-		 << */ 0.2 * midterm + 0.4 * final + 0.4 *  x  / size
-		 << /* setprecision(prec) <<*/ endl;
+	streamsize prec = cout.precision();
+	cout << "Your final grade is " << setprecision(3)
+		 <<  0.2 * midterm + 0.4 * final + 0.4 *  median
+		 <<  setprecision(prec) << endl;
 	return 0;
 }
