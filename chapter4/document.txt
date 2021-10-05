@@ -1,0 +1,16 @@
+Program structure:
+
+#include <system-header>
+Angle brackets, < > , enclose system headers. System headers may or may not b e
+implemented as files
+
+#include "user-defined-header-file-name"
+User-defined header files are include d by enclosing the name in quotes. Typically ,
+user-defined headers have a suffix of .h .
+
+Header files should be guarded against multiple inclusion by wrapping the file in an  #ifndef
+GUARD _ header_name directive. Headers should avoid declaring names that they do not use .
+In particular, they should not include using -declarations, but instead should prefi x
+standard-library names with std::  explicitly.
+
+
