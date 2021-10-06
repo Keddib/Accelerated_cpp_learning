@@ -1,0 +1,141 @@
+Containers and iterators: The standard library is designed so that similar operations o n
+different containers have the same interface and the same semantics. The containers w e
+have used so far are all sequential  containers. We'll see in Chapter 7 that the library als o
+provides associative containers. All the sequential containers and the string  type provide th e
+following operations:
+container <T>::iterator
+container <T>::const_iterator
+The name of the type of the iterator on this container .
+
+
+container<T>::size_type
+The name of the appropriate type to hold the size of the largest possible instance of thi s
+container .
+
+
+c.begin()
+c.end()
+Iterators referring to the first and (one past) the last element in the container
+
+
+c.rbegin()
+c.rend()
+Iterators referring to the last and (one beyond) the first element in the container that gran t
+access to the container's elements in reverse order .
+
+
+container<T> c;
+container<T> c(c2) ;
+Defines c  as a container that is empty or a copy of c2  if given
+
+container<T> c(n) ;
+Defines c  as a container with n  elements that are value-initialized (§7.2/125) according t o
+the type of T . If T  is a class type, that type will control how to initialize the elements. If  T  is a
+built-in arithmetic type, then the elements will be initialized to 0 .
+
+container<T> c(n, t) ;
+Defines c  as a container with n  elements that are copies of t .
+
+container<T> c(b, e) ;
+Creates a container that holds a copy of the elements denoted by iterators in the range  [b,
+e)
+
+c = c2
+Replaces the contents of container c  with a copy of the container c2 .
+c.size()
+Returns the number of elements in c  as a size_type .
+c.empty()
+Predicate that indicates whether c  has no elements .
+c.insert(d, b, e)
+Copies elements denoted by iterators in the range [b, e)  and inserts them into  c  immediately
+before d
+
+
+c.erase(it)
+c.erase(b, e)
+Removes the element denoted by it  or the range of elements denoted by  [b, e)  from the
+container c . This operation is fast for list  but can be slow for  vector  and string , because for
+these types it involves copying all the elements after the one that is removed. For  list ,
+iterators to the element(s) that are erased are invalidated. For  vector  and string , all iterators
+to elements after the one erased are invalidated .
+
+c.push_back(t)
+Adds an element to the end of c  with the value t
+
+Containers that support random access, and the string  type, also provide the following:
+c[n]
+Fetches the character at position n  from the container c .
+
+Iterator operations:
+*it
+Dereferences the iterator it  to obtain the value stored in the container at the position that  it
+denotes. This operation is often combined with . to obtain a member of a class object, as i n
+(*it).x , which yields the member x  of the object denoted by the iterator  it. * has lower
+precedence than . and the same precedence as  ++  and —
+
+
+it->x
+Equivalent to (*it).x , which returns the member x  denoted by the object obtained b y
+dereferencing the iterator it . Same precedence as the .  operator .
+
+
+++i
+it++
+Increments the iterator so that it denotes the next element in the container
+
+b == e
+b != e
+Compares two iterators for equality or inequality .
+
+The string  type offers iterators that support the same operations as do iterators on  vector s.
+In particular, string  supports full random access, about which we'll learn more in Chapter 8. I n
+addition to the operations on containers, string  also provides:
+
+s.substr(i, j)
+Creates a new string  that holds a copy of the characters in s  with indices in the range  [i, i +
+j) .
+getline(is, s)
+Reads a line of input from is  and stores it in s .
+
+
+s += s2
+Replaces the value of s  by s + s2
+
+The vector  type offers the most powerful iterators, called random-access iterators, of any o f
+the library containers. We'll learn more about these in Chapter 8.
+Although all the functions we've written have relied on dynamically allocating our  vector
+elements, there are also mechanisms for preallocating elements, and an operation to direc t
+the vector  to allocate, but not to use, additional memory in order to avoid the overhead o f
+repeated memory allocations.
+v.reserve(n)
+Reserves space to hold n  elements, but does not initialize them. This operation does no t
+change the size of the container. It affects only the frequency with which vector may have t o
+allocate memory in response to repeated calls to  insert  or push_back .
+v.resize(n)
+Gives v  a new size equal to n . If n  is smaller than the current size of v , elements beyond  n
+are removed from the vector . If n  is greater than the current size, then new elements ar e
+added to v  and initialized as appropriate to the type in  v .
+
+The list  type is optimized for efficiently inserting and deleting elements at any point in th e
+container. The operations on list s and list  iterators include those described in §5.9/96. I n
+addition,
+
+.sort()
+l.sort(cmp)
+Sorts the elements in l  using the <  operator for the type in the list , or the predicate  cmp
+addition,
+l.sort()
+l.sort(cmp)
+Sorts the elements in l  using the <  operator for the type in the list , or the predicate  cmp .
+
+The <cctype>  header provides useful functions for manipulating character data:
+
+isspace(c)     true if c is a whitespace character.
+isalpha(c)     true if c is an alphabetic character.
+isdigit(c)     true if c is a digit character.
+isalnum(c)     true if c is a letter or a digit.
+ispunct(c)     true if c is a punctuation character.
+isupper(c)     true if c is an uppercase letter.
+islower(c)     true if c is a lowercase letter.
+toupper(c)     Yields the uppercase equivalent to c
+tolower(c)     Yields the lowercase equivalent to c

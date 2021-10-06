@@ -5,6 +5,8 @@
 
 using namespace std;
 
+
+
 string::size_type width(const vector<string>& v)
 {
 	string::size_type maxlen = 0;
@@ -13,51 +15,34 @@ string::size_type width(const vector<string>& v)
 	return maxlen;
 }
 
-void	edit_lv(vector<string> &el, const vector<string> &l, string::size_type &max_s)
+
+vector<string>
+hcat(const vector<string>& left, const vector<string>& right)
 {
-	typedef vector<string>::size_type v_size;
-
-	v_size lS, rS;
-	el.insert(el.end(), l.begin(), l.end());
-
-	lS = el.size();
-	rS = l.size();
-	while (lS != rS)
-	{
-		el.push_back(string(max_s, ' '));
-		lS = el.size();
-	}
-
+    vector<string> ret;
+    // add 1 to leave a space between pictures
+    string::size_type width1 = width(left) + 1;
+    // indices to look at elements from left and right respectively
+    vector<string>::size_type i = 0, j = 0;
+    // continue until we've seen all rows from both pictures
+        string s;
+    while (i != left.size() || j != right.size()) {
+        // construct new string to hold characters from both pictures
+        // string s;
+        // copy a row from the left-hand side, if there is one
+        if (i != left.size())
+            s = left[i++];
+        // pad to full width
+        s += string(width1 - s.size(), ' ');
+        // copy a row from the right-hand side, if there is one
+        if (j != right.size())
+            s += right[j++];
+        // add s to the picture we're creating
+        ret.push_back(s);
+		s.clear();
+    }
+    return  ret;
 }
-
-vector<string> hcat(const vector<string>& l, const vector<string>& r)
-{
-	vector<string> ret;
-	vector<string> editedL;
-	string::size_type max_s;
-	typedef vector<string>::size_type v_size;
-
-	v_size lS, rS;
-	lS = l.size();
-	rS = r.size();
-	max_s = width(l);
-	if (lS < rS)
-		edit_lv(editedL, l, max_s);
-	else
-		editedL = l;
-	vector<string>::const_iterator iter = r.begin();
-	vector<string>::iterator iter1 = editedL.begin();
-	vector<string>::const_iterator end = r.end();
-	vector<string>::iterator end1 = editedL.end();
-	while (iter1 != end1 && iter != end)
-	{
-		*iter1 +=*iter;
-		++iter;
-		++iter1;
-	}
-	return ret;
-}
-
 // string::size_type width(const vector<string>& v)
 // {
 // 	string::size_type maxlen = 0;
@@ -87,14 +72,10 @@ vector<string> frame(const vector<string>& v)
 
 int main()
 {
-	// while (getline(cin, s))
-	// {
 		vector<string> info = ft_split("hello world I am doing well");
-		// vector<string> nw = frame(info);
-		vector<string> nw = ft_split("done done done");
+		vector<string> nw = ft_split("done done done Done Done Done Done dlgkhdgkhdkghldghdlkgh");
+		string::size_type width1 = width(nw) + 1;
 		vector<string> nw1 = frame(nw);
-		// image.insert(image.end(), nw.begin(), nw.end());
-		vector<string> image = hcat(nw, nw1);
-	// }
+		vector<string> image = hcat(info, nw1);
 		copy(image.begin(), image.end(), ostream_iterator<string>(cout, "\n"));
 }

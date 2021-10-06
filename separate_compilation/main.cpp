@@ -6,8 +6,13 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <fstream>
 #include "grade.hpp"
 #include "Student.hpp"
+
+using namespace std;
+
+typedef list<Student_info> my_data;
 
 using std::cin;                     using std::setprecision;
 using std::cout;                    using std::sort;
@@ -23,12 +28,12 @@ bool fgrade(const Student_info& s)
 
 
 // separate passing and failing student records: first try
-list<Student_info> extract_fails(list<Student_info>& students)
+my_data extract_fails(list<Student_info>& students)
 {
-	list<Student_info>	fail;
-	list<Student_info>::iterator	iter = student.begin();
+	my_data	fail;
+	my_data::iterator	iter = students.begin();
 
-	while (iter != student.end())
+	while (iter != students.end())
 	{
 		if (fgrade(*iter))
 		{
@@ -43,22 +48,27 @@ list<Student_info> extract_fails(list<Student_info>& students)
 
 int main()
 {
+	std::ifstream myfile("students.txt");
 	vector<Student_info> students;
 	Student_info record;
+	string line;
 	string::size_type maxlen = 0;       // the length of the longest name
 	// read and store all the students data.
 	// Invariant:  students contains all the student records read so far
 	//   maxlen contains the length of the longest name in students
-	while (read(cin, record)) {
-		// find length of longest name
-		maxlen = max(maxlen, record.name.size());
-		students.push_back(record);
+	if (myfile.is_open())
+	{
+		while (read(myfile, record)) {
+			// find length of longest name
+			maxlen = max(maxlen, record.name.size());
+			students.push_back(record);
+		}
 	}
 	// alphabetize the student records
 	sort(students.begin(), students.end(), compare);
 
-	vector<Student_info>::const_iterator iter = student.begin();
-	vector<Student_info>::const_iterator end = student.end();
+	vector<Student_info>::const_iterator iter = students.begin();
+	vector<Student_info>::const_iterator end = students.end();
 
 	// write the names and grades
 	while (iter != end) {
@@ -76,6 +86,5 @@ int main()
 		cout << endl;
 		iter++;
 	}
-	std::vector<int>::iterator it;
 	return 0;
 }

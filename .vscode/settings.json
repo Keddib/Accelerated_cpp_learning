@@ -61,6 +61,8 @@
 		"utility": "cpp",
 		"vector": "cpp",
 		"iomanip": "cpp",
-		"list": "cpp"
+		"list": "cpp",
+		"deque": "cpp",
+		"filesystem": "cpp"
 	}
 }
