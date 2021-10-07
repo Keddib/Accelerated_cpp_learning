@@ -1,0 +1,75 @@
+Type modifiers:
+static type variable ;
+For local declarations, declares variable with static  storage class. The value of variable
+persists across executions of this scope and is guaranteed to be initialized before th e
+variable is used for the first time. When the program exits from the scope, the variabl e
+keeps its value until the next time the program enters that scope. We'll see in §13.4/244 tha t
+the meaning of static  varies with context
+
+Types: The built-in type void  can be used in a restricted number of ways, one of which is t o
+indicate that a function yields no return value. Such functions can be exited through a  return ;
+that has no value or by falling off the end of the function
+
+
+Iterator adaptors are functions that yield iterators. The most common are the adaptors tha t
+generate insert_iterators , which are iterators that grow the associated container dynamically .
+Such iterators can be used safely as the destination of a copying algorithm. They are define d
+in header <iterator>
+
+back_inserter(c)
+Yields an iterator on the container c  that appends elements to c . The container mus t
+support push_back , which the list, vector , and the string  types all do .
+
+front_inserter(c)
+Like back_inserter , but inserts at the front of the container. The container must suppor t
+push_front , which list  does, but string  and vector  do not .
+
+inserter(c, it)
+Like back_inserter , but inserts elements before the iterator it .
+
+
+Algorithms: Unless otherwise indicated, <algorithm>  defines these algorithms:
+
+
+accumulate(b, e, t)
+Creates a local variable and initializes it to a copy of t  (with the same type as t , which mean s
+that the type of t  is crucially important to the behavior of accumulate ), adds each element i n
+the range [b, e)  to the variable, and returns a copy of the variable as its result. Defined i n
+<numeric> .
+find(b, e, t)
+find_if(b, e, p)
+
+search(b, e, b2, e2)
+Algorithms to look for a given value in the sequence [b, e) . The find  algorithm looks for th e
+value t ; the find_if  algorithm tests each element against the predicate  p ; the search
+algorithm looks for the sequence denoted by [b2, e2) .
+copy(b, e, d)
+remove_copy(b, e, d, t)
+remove_copy_if(b, e, d, p)
+Algorithms to copy the sequence from [b, e)  to the destination denoted by d . The  copy
+algorithm copies the entire sequence; remove_copy  copies all elements not equal to  t ; and
+remove_copy_if  copies all elements for which the predicate p  fails .
+remove_if(b, e, p)
+Arranges the container so that the elements in the range [b, e)  for which the predicate  p  is
+false are at the front of the range. Returns an iterator denoting one past the range of thes e
+"unremoved" elements .
+remove(b, e, t)
+
+Like remove_if , but tests which elements to keep against the value t .
+
+transform(b, e, d, f)
+Runs the function f  on the elements in the range [b, e) , storing the result of f  in d .
+partition(b, e, p)  stable_partition(b, e, p)
+Partitions the elements in the range [b, e) , based on the predicate p , so that elements fo r
+which the predicate is true  are at the front of the container. Returns an iterator to the firs t
+element for which the predicate is false , or e  if the predicate is true  for all elements. Th e
+stable_partition  function maintains the input order among the elements in each partition .
+
+partition(b, e, p)  stable_partition(b, e, p)
+Partitions the elements in the range [b, e) , based on the predicate p , so that elements fo r
+which the predicate is true  are at the front of the container. Returns an iterator to the firs t
+element for which the predicate is false , or e  if the predicate is true  for all elements. Th e
+stable_partition  function maintains the input order among the elements in each partition .
+
+
+

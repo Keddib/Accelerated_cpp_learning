@@ -63,6 +63,7 @@
 		"iomanip": "cpp",
 		"list": "cpp",
 		"deque": "cpp",
-		"filesystem": "cpp"
+		"filesystem": "cpp",
+		"numeric": "cpp"
 	}
 }
