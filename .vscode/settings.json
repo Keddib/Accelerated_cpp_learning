@@ -64,6 +64,10 @@
 		"list": "cpp",
 		"deque": "cpp",
 		"filesystem": "cpp",
-		"numeric": "cpp"
+		"numeric": "cpp",
+		"__tree": "cpp",
+		"fstream": "cpp",
+		"map": "cpp",
+		"stack": "cpp"
 	}
 }
