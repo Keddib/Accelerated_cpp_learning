@@ -1,0 +1,48 @@
+The do while statement is similar to the while  statement (§2.3.1/19), except that the test is a t
+the end. The general form of the statement is
+do statement
+while (condition);
+The statement is executed first, after which the condition and statement are executed
+alternately until the  condition is false .
+
+Value-initialization: Accessing a map  element that doesn't yet exist creates an element wit h
+a value of V() , where V  is the type of the values stored in the map . Such an expression is sai d
+to be value-initialized. §9.5/164 explains the details of value-initialization; the most importan t
+aspect is that built-in types are initialized to 0.
+
+
+rand() is a function that yields a random integer in the range [0, RAND_MAX] . Both  rand  and
+RAND_MAX  are defined in <cstdlib>
+
+pair<K, V> is a simple type whose objects hold pairs of values. Access to these data values i s
+through their names, first  and second  respectively.
+
+map<K, V> is an associative array with key type K  and value type V . The elements of a  map
+are key-value pairs, which are maintained in key order to allow efficient access of elements b y
+key. The iterators on map s are bidirectional (§8.2.5/148). Dereferencing a map iterator yield s
+a value of type pair<const K, V> . The map  operations include:
+
+map<K, V> m;
+Creates a new empty map , with keys of type const K  and values of type V .
+map<K, V> m(cmp);
+Creates a new empty map  with keys of type const K  and values of type V , that uses th e
+predicate cmp  to determine the order of the elements
+
+m[k]
+Indexes the map  using a key, k , of type K , and returns an lvalue of type V . If there is n o
+entry for the given key, a new value-initialized element is created and inserted into the  map
+with this key. Because using []  to access a map  might create a new element,  []  is not
+allowed on a const map
+
+
+m.begin()
+m.end()
+Return iterators that can be used to access the elements of a map . Note that dereferencin g
+one of these iterators yields a key-value pair, not just a value .
+m.find(k)
+Returns an iterator referring to the element with key k , or m.end()  if no such element exists .
+For a map<K, V>  and an associated iterator p , the following apply:
+p->first  Yields an lvalue of type  const K  that is the key for the element p  denotes.
+p->second  Yields an lvalue of type V  that is the value part of the element that p  denotes.
+
+

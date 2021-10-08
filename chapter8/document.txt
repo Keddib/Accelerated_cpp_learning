@@ -1,0 +1,42 @@
+Template functions that return simple types have the form
+template<class type-parameter [, class type-parameter]... >
+	ret-type function-name (parameter-list)
+
+Each type-parameter is a name that may be used inside the function definition wherever a
+type is required. Each of these names should be used in the function parameter-list to nam e
+the type of one or more parameters.
+
+If the types do not all appear in the argument list, then the caller must qualify th e
+function-name with the actual types that cannot be inferred. For example,
+
+	template<class T> T zero() { return 0; }
+
+defines zero  to be a template function with a single type parameter, which is used to nam e
+the return type. In calling this function, we must supply the return type explicitly:
+
+	double x = zero<double>();
+
+The typename  keyword must be used to qualify declarations that use types that are define d
+by the template type parameters. For example,
+
+	typename T::size_type name;
+
+declares name  to have type size_type , which must be defined as a type inside T .
+
+The implementation automatically instantiates a separate instance of the template function fo r
+each set of types used in a call to the function.
+
+Iterators:  A key contribution of the C++ standard library is the idea that algorithms ca n
+achieve data-structure independence by using iterators as the glue between algorithms an d
+containers. Furthermore, the realization that algorithms can be factored based on th e
+operations that are required for the iterators that they use means that it is easy to match a
+container with the algorithms that can be used on it.
+T
+here are five iterator categories. In general, the later categories subsume the operations i n
+the earlier ones:
+
+Input iterator:            Sequential access in one direction, input only
+Output iterator:           Sequential access in one direction, output only
+Forward iterator:          Sequential access in one direction, input and output
+Bidirectional iterator:    Sequential access in both directions, input and output
+Random-access iterator:    Efficient access to any element, input and output

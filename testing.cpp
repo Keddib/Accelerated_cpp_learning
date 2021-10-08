@@ -21,9 +21,9 @@ int main()
 	cout << endl;
 
 	std::string str = "Hello World!";
-    std::vector<std::string> vec(10,str);
-    string a = accumulate(vec.begin(), vec.end(), std::string(""));
-    cout << a << endl;
+	std::vector<std::string> vec(10,str);
+	string a = accumulate(vec.begin(), vec.end(), std::string(""));
+	cout << a << endl;
 
 	return 0;
 }
