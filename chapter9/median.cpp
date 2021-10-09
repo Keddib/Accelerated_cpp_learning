@@ -1,8 +1,10 @@
 // source file for the median function
 
+#include "median.hpp"
 #include <algorithm>   // to get the declaration of  sort
 #include <stdexcept>    // to get the declaration of  domain_error
 #include <vector>       // to get the declaration of  vector
+
 
 using std::domain_error;   using std::sort;   using std::vector;
 

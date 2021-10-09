@@ -1,5 +1,4 @@
 // median.h
-
 #ifndef GUARD_median_hpp
 #define GUARD_median_hpp
 
