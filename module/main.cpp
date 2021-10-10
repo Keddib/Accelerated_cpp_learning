@@ -1,11 +1,6 @@
 #include <iostream>
 #include <cctype>
 
-int foo()
-{
-	return 10;
-}
-
 int main(int argc, char **argv)
 {
 	if (argc == 1)
@@ -19,7 +14,5 @@ int main(int argc, char **argv)
 			std::cout << (char) toupper(argv[y][i]);
 	}
 	std::cout << std::endl;
-	int (*fcnPtr)();
-	std::cout << reinterpret_cast<void*>(foo) << std::endl;
 	return (0);
 }

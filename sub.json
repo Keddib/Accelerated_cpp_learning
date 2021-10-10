@@ -1,0 +1,550 @@
+[
+	{
+		"project": "ft_transcendence",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24885/en.subject.pdf"
+	},
+	{
+		"project": "42run",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9356/en.subject.pdf"
+	},
+	{
+		"project": "abstract-vm",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9691/en.subject.pdf"
+	},
+	{
+		"project": "avaj-launcher",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/16891/en.subject.pdf"
+	},
+	{
+		"project": "bomberman",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19616/en.subject.pdf"
+	},
+	{
+		"project": "boot2root",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19199/en.subject.pdf"
+	},
+	{
+		"project": "Born2beroot",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/27093/en.subject.pdf"
+	},
+	{
+		"project": "camagru",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19609/en.subject.pdf"
+	},
+	{
+		"project": "cloud-1",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/21425/en.subject.pdf"
+	},
+	{
+		"project": "computorv1",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13223/en.subject.pdf"
+	},
+	{
+		"project": "computorv2",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13228/en.subject.pdf"
+	},
+	{
+		"project": "corewar",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19205/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 00",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26304/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 01",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/27079/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 02",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26312/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 03",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26201/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 04",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26606/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 05",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26541/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 06",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26608/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 07",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26614/en.subject.pdf"
+	},
+	{
+		"project": "CPP Module 08",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26618/en.subject.pdf"
+	},
+	{
+		"project": "cub3d",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24165/en.subject.pdf"
+	},
+	{
+		"project": "darkly",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19001/en.subject.pdf"
+	},
+	{
+		"project": "death",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13230/en.subject.pdf"
+	},
+	{
+		"project": "doom-nukem",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26629/en.subject.pdf"
+	},
+	{
+		"project": "drivers-and-interrupts",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13283/en.subject.pdf"
+	},
+	{
+		"project": "dr-quine",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15594/en.subject.pdf"
+	},
+	{
+		"project": "dslr",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19501/en.subject.pdf"
+	},
+	{
+		"project": "durex",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13240/en.subject.pdf"
+	},
+	{
+		"project": "Exam Rank 02",
+		"pdf": ""
+	},
+	{
+		"project": "Exam Rank 03",
+		"pdf": ""
+	},
+	{
+		"project": "Exam Rank 04",
+		"pdf": ""
+	},
+	{
+		"project": "Exam Rank 05",
+		"pdf": ""
+	},
+	{
+		"project": "Exam Rank 06",
+		"pdf": ""
+	},
+	{
+		"project": "expert-system",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13349/en.subject.pdf"
+	},
+	{
+		"project": "famine",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13234/en.subject.pdf"
+	},
+	{
+		"project": "FdF",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24199/en.subject.pdf"
+	},
+	{
+		"project": "filesystem",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13280/en.subject.pdf"
+	},
+	{
+		"project": "fix-me",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/22437/en.subject.pdf"
+	},
+	{
+		"project": "fract-ol",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26229/en.subject.pdf"
+	},
+	{
+		"project": "ft_ality",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15952/en.subject.pdf"
+	},
+	{
+		"project": "ft_containers",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26104/en.subject.pdf"
+	},
+	{
+		"project": "ft_hangouts",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13208/en.subject.pdf"
+	},
+	{
+		"project": "ft_irc",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24623/en.subject.pdf"
+	},
+	{
+		"project": "ft_linear_regression",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13331/en.subject.pdf"
+	},
+	{
+		"project": "ft_linux",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13374/en.subject.pdf"
+	},
+	{
+		"project": "ft_ls",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19628/en.subject.pdf"
+	},
+	{
+		"project": "ft_newton",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/22536/en.subject.pdf"
+	},
+	{
+		"project": "ft_nmap",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/20631/en.subject.pdf"
+	},
+	{
+		"project": "ft_ping",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13247/en.subject.pdf"
+	},
+	{
+		"project": "ft_printf",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/27070/en.subject.pdf"
+	},
+	{
+		"project": "ft_script",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9796/en.subject.pdf"
+	},
+	{
+		"project": "ft_select",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13303/en.subject.pdf"
+	},
+	{
+		"project": "ft_server",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/22479/en.subject.pdf"
+	},
+	{
+		"project": "ft_services",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/22494/en.subject.pdf"
+	},
+	{
+		"project": "ft_ssl_des",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19604/en.subject.pdf"
+	},
+	{
+		"project": "ft_ssl_md5",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26754/en.subject.pdf"
+	},
+	{
+		"project": "ft_ssl_rsa",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19602/en.subject.pdf"
+	},
+	{
+		"project": "ft_traceroute",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13249/en.subject.pdf"
+	},
+	{
+		"project": "ft_turing",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15543/en.subject.pdf"
+	},
+	{
+		"project": "ft_vox",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15953/en.subject.pdf"
+	},
+	{
+		"project": "gbmu",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19201/en.subject.pdf"
+	},
+	{
+		"project": "get_next_line",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/27083/en.subject.pdf"
+	},
+	{
+		"project": "gomoku",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13352/en.subject.pdf"
+	},
+	{
+		"project": "guimp",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19203/en.subject.pdf"
+	},
+	{
+		"project": "h42n42",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13187/en.subject.pdf"
+	},
+	{
+		"project": "humangl",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9363/en.subject.pdf"
+	},
+	{
+		"project": "hypertube",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15621/en.subject.pdf"
+	},
+	{
+		"project": "Inception",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/25875/en.subject.pdf"
+	},
+	{
+		"project": "Internship I",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13346/en.subject.pdf"
+	},
+	{
+		"project": "Internship II",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15949/en.subject.pdf"
+	},
+	{
+		"project": "in-the-shadows",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15973/en.subject.pdf"
+	},
+	{
+		"project": "kfs-1",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13286/en.subject.pdf"
+	},
+	{
+		"project": "kfs-2",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13287/en.subject.pdf"
+	},
+	{
+		"project": "kfs-3",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13288/en.subject.pdf"
+	},
+	{
+		"project": "kfs-4",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13289/en.subject.pdf"
+	},
+	{
+		"project": "kfs-5",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13290/en.subject.pdf"
+	},
+	{
+		"project": "kfs-6",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13291/en.subject.pdf"
+	},
+	{
+		"project": "kfs-7",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9398/en.subject.pdf"
+	},
+	{
+		"project": "kfs-8",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13292/en.subject.pdf"
+	},
+	{
+		"project": "kfs-9",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13293/en.subject.pdf"
+	},
+	{
+		"project": "kfs-x",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/21136/en.subject.pdf"
+	},
+	{
+		"project": "krpsim",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13362/en.subject.pdf"
+	},
+	{
+		"project": "lem_in",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13343/en.subject.pdf"
+	},
+	{
+		"project": "lem-ipc",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13255/en.subject.pdf"
+	},
+	{
+		"project": "libasm",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/23243/en.subject.pdf"
+	},
+	{
+		"project": "Libft",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26604/en.subject.pdf"
+	},
+	{
+		"project": "little-penguin-1",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13285/en.subject.pdf"
+	},
+	{
+		"project": "malloc",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19626/en.subject.pdf"
+	},
+	{
+		"project": "matcha",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/17245/en.subject.pdf"
+	},
+	{
+		"project": "matt-daemon",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13309/en.subject.pdf"
+	},
+	{
+		"project": "miniRT",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24621/en.subject.pdf"
+	},
+	{
+		"project": "minishell",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/25835/en.subject.pdf"
+	},
+	{
+		"project": "minitalk",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24610/en.subject.pdf"
+	},
+	{
+		"project": "mod1",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13361/en.subject.pdf"
+	},
+	{
+		"project": "multilayer-perceptron",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13338/en.subject.pdf"
+	},
+	{
+		"project": "music-room",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19613/en.subject.pdf"
+	},
+	{
+		"project": "NetPractice",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/25824/en.subject.pdf"
+	},
+	{
+		"project": "nibbler",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9354/en.subject.pdf"
+	},
+	{
+		"project": "nm-otool",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13307/en.subject.pdf"
+	},
+	{
+		"project": "n-puzzle",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/17244/en.subject.pdf"
+	},
+	{
+		"project": "Open Project",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13354/en.subject.pdf"
+	},
+	{
+		"project": "override",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13281/en.subject.pdf"
+	},
+	{
+		"project": "particle-system",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19214/en.subject.pdf"
+	},
+	{
+		"project": "Part_Time I",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13350/en.subject.pdf"
+	},
+	{
+		"project": "Part_Time II",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/16057/en.subject.pdf"
+	},
+	{
+		"project": "pestilence",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13236/en.subject.pdf"
+	},
+	{
+		"project": "Philosophers",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26231/en.subject.pdf"
+	},
+	{
+		"project": "pipex",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/26356/en.subject.pdf"
+	},
+	{
+		"project": "Piscine OCaml",
+		"pdf": ""
+	},
+	{
+		"project": "Piscine PHP Symfony",
+		"pdf": ""
+	},
+	{
+		"project": "Piscine Python Django",
+		"pdf": ""
+	},
+	{
+		"project": "Piscine Ruby on Rails",
+		"pdf": ""
+	},
+	{
+		"project": "Piscine Swift iOS",
+		"pdf": ""
+	},
+	{
+		"project": "Piscine Unity",
+		"pdf": ""
+	},
+	{
+		"project": "process-and-memory",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13284/en.subject.pdf"
+	},
+	{
+		"project": "push_swap",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/23502/en.subject.pdf"
+	},
+	{
+		"project": "rainfall",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13243/en.subject.pdf"
+	},
+	{
+		"project": "red-tetris",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19615/en.subject.pdf"
+	},
+	{
+		"project": "rubik",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13358/en.subject.pdf"
+	},
+	{
+		"project": "scop",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/24782/en.subject.pdf"
+	},
+	{
+		"project": "shaderpixel",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/15958/en.subject.pdf"
+	},
+	{
+		"project": "snow-crash",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19197/en.subject.pdf"
+	},
+	{
+		"project": "so_long",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/27075/en.subject.pdf"
+	},
+	{
+		"project": "Startup Internship",
+		"pdf": ""
+	},
+	{
+		"project": "strace",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/20026/en.subject.pdf"
+	},
+	{
+		"project": "swifty-companion",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/23559/en.subject.pdf"
+	},
+	{
+		"project": "swifty-proteins",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/23566/en.subject.pdf"
+	},
+	{
+		"project": "swingy",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/9395/en.subject.pdf"
+	},
+	{
+		"project": "taskmaster",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13305/en.subject.pdf"
+	},
+	{
+		"project": "total-perspective-vortex",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13336/en.subject.pdf"
+	},
+	{
+		"project": "userspace_digressions",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19503/en.subject.pdf"
+	},
+	{
+		"project": "war",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13232/en.subject.pdf"
+	},
+	{
+		"project": "webserv",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/25507/en.subject.pdf"
+	},
+	{
+		"project": "woody-woodpacker",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13313/en.subject.pdf"
+	},
+	{
+		"project": "xv",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/19213/en.subject.pdf"
+	},
+	{
+		"project": "zappy",
+		"pdf": "https://cdn.intra.42.fr/pdf/pdf/13257/en.subject.pdf"
+	}
+]

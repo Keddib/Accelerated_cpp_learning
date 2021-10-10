@@ -9,7 +9,7 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${fileDirname}/${fileBasenameNoExtension}",
-			"args": [],
+			"args": ["arrays.cpp"],
 			"stopAtEntry": true,
 			"cwd": "${fileDirname}",
 			"environment": [],

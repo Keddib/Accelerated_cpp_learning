@@ -1,0 +1,61 @@
+Pointers  are random-access iterators that hold the addresses of objects. For example:
+p = &s     Makes  p  point to s .
+*p = s2  Dereferences  p  and assigns a new value to the object to which p  points.
+vector<string> (*sp)(const string&) = split;
+Defines sp  as a function pointer that points to the split  function .
+
+int nums[100];
+Defines nums  as an array of 100 int s .
+
+int* bn = nums;
+Defines bn  as a pointer to the first element of the array nums
+
+int* en = nums + 100;
+Defines en  as a pointer to (one past) the last element of the array nums .
+
+Pointers can point at single objects, arrays of objects, or functions. When a pointer refers to a
+function, its value may be used only to call the function.
+
+Arrays  are fixed-size, built-in containers whose iterators are pointers. Uses of the name of a n
+array are automatically converted to a pointer to the initial element of the array. A string litera l
+is a null-terminated array of characters. Indexing an array is defined in terms of pointe r
+operations: For every array a  and an index n, a[n]  is the same as *(a + n) . If  a  is an array with
+n  elements, then the range [a, a + n)  represents all the elements of a . Arrays can b e
+initialized when they are defined:
+	string days[] = { "Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun" };
+
+he implementation infers the size of days  from the number of initializers.
+The main function may (optionally) take two arguments. The first argument, an int , says ho w
+many character arrays are stored in the second argument, which is a char** . The secon d
+argument to main  is sometimes written as
+char* argv[]
+which is equivalent to char** . This syntax is legal only in parameter lists.
+
+Input-Output:
+cerr
+Standard error stream. Output is not buffered .
+clog
+Standard error intended for logging. Output is buffered .
+ifstream(cp)
+Input stream bound to the file named by the char* cp . Supports the operations on istream s .
+ofstream (cp)
+Output stream bound to the file named by the char* cp . Supports the operations on
+ostream s .
+Input and output file streams are defined in <ifstream> .
+
+Memory management:
+new T
+Allocates and default-initializes a new object of type T  and returns a pointer to the object .
+new T( args )
+Allocates and initializes a new object of type T  using args  to initialize the object. Returns a
+pointer to the object .
+delete p
+Destroys the object to which p  points and frees the memory used to hold  *p . The pointer
+must point at an object that was dynamically allocated .
+new T[n]
+Allocates and default-initializes an array of n  new objects of type T . Returns a pointer to th e
+initial element in the array .
+delete[] p
+Destroys the objects in the array to which p  points and frees the memory used to hold th e
+array. The pointer must point to the initial element of an array that was dynamicall y
+allocated 
