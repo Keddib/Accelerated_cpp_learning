@@ -25,8 +25,11 @@ int main()
 	std::vector<Student_info>::iterator iter = students.begin();
 	while (iter != students.end())
 	{
-		std::cout << iter->name() + " " << std::string(maxlen - iter->name().size(), ' ')
-		<< iter->grade() << std::endl;
+		if (iter->valid())
+		{
+			std::cout << iter->name() + " " << std::string(maxlen - iter->name().size(), ' ')
+			<< iter->grade() << std::endl;
+		}
 		iter++;
 	}
 	std::cout << students[0].finalgade << std::endl;

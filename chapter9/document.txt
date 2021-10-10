@@ -1,0 +1,36 @@
+User-defined types can be defined as either struct s or class es. The only difference is in th e
+default protection that applies to members defined before the first protection label: Member s
+defined after struct are public ; those defined after class are private .
+
+Protection labels control access to members of a class type: public  members are generall y
+accessible; private  members are accessible only to members of the class. Protection label s
+can appear in any order and multiple times within a class.
+
+Member functions: Types may define member functions as well as data. Member function s
+are implicitly called on behalf of a specific object. References to member data or function s
+from within a member function are implicitly bound to that object.
+
+Member functions can be defined inside or outside the class definition. Defining a membe r
+function inside the class asks the implementation to expand calls to it inline, thus avoidin g
+function call overhead. Outside the class, the name of the function must be qualified t o
+indicate that it is from the class scope: class-name::member-name refers to the membe r
+member-name from the class class-name.
+
+Member functions can be defined as const  by inserting the const  keyword after th e
+parameter list. Such members may not change the state of the object on which they ar e
+invoked. Only const  member functions may be called for const  objects.
+
+Constructors are special member functions that define how objects of the type are initialized .
+Constructors have the same name as the class and have no return value. A class can defin e
+multiple constructors as long as they differ in the number or types of their arguments. It i s
+good practice for every constructor to ensure that every data member has a sensible value o n
+exit from the constructor.
+
+Constructor initializer list: A constructor initializer is a comma-separated list of member -
+name (value) pairs. Each member-name is initialized from the associated value. Data
+members that are not explicitly initialized are implicitly initialized .
+
+The order in which members are initialized is determined by the order of declaration in th e
+class, so care must be taken when using one class member to initialize another. It is safe r
+practice to avoid such interdependence by assigning values to these members inside th e
+constructor body and not initializing them in the constructor initializer.

@@ -9,7 +9,6 @@ Student_info::Student_info(std::istream& is) { read(is); }
 std::istream& Student_info::read(std::istream& in)
 {
 	in >> n >> midterm >> final;
-	read_hw(in, homework);
 	return in;
 }
 
